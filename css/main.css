@@ -4,11 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Main Styling */
+
 html , body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.7em;
-   
+    font-family: sans-serif;
+    line-height: 1.7em; 
 }
+
 a {
     color: #333;
     text-decoration: none;
@@ -19,26 +22,69 @@ h1,h2,h3 {
 p {
     margin: 10px 0;
 }
-.clr {
-    clear: both;
-}
+
+/* Utility Classes */ 
 .container {
     margin: auto;
     max-width: 1100px;
     overflow: auto;
     padding: 0 20px;
-
 }
+
+.lead {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background: #f7c08a;
+    color: #333;
+}
+
+.btn-light {
+    background: whitesmoke;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-praimary {
+    color: #333;
+    background-color: #f7c08a;
+}
+.praimary-text {
+    color: #f7c08a;
+}
+
+.clr {
+    clear: both;
+}
+
 /* Navbar Styling */ 
+
 #praimary-nav {
     background: #333;
-   color: #fff;
+    color: #fff;
     overflow: auto;
 
 }
 #praimary-nav a {
     color: white;
 }
+
 #praimary-nav h1 {
     float: left;
     padding: 0;
@@ -71,9 +117,75 @@ p {
     color:coral;
 }
 
-footer p {
-    background:skyblue;
-    padding: 15px;
+/* Show Case */ 
+
+#showcase {
+    background: url("../img/showcase.jpg") no-repeat center center/cover;
+    height: 600px;
+}
+
+#showcase .showcase-content {
+    color: #fff;
     text-align: center;
+    padding-top: 170px;
+}
+
+#showcase .showcase-content h2 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+/* Home Info */
+
+#home-info {
+    height: 400px;
+}
+
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url("../img/photo-1.jpg") no-repeat;
+    min-height: 100%;
+    
+}
+
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+#home-info .info-content p {
+    padding-bottom: 30px;
+}
+
+/* Feaurtes */ 
+
+.box{
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+/* Footer */ 
+
+#main-footer  {
+    background:#333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
 
 }
+
+
