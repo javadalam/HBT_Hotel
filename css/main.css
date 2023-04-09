@@ -91,6 +91,11 @@ p {
 .py-3 {
     padding: 30px 0;
 }
+
+/* Margin Styling */ 
+.my-1 {
+    margin: 10px auto ;
+}
 /* Navbar Styling */ 
 
 #praimary-nav {
@@ -268,6 +273,12 @@ p {
     outline: none;
     border-color: #f7c08a;
 
+}
+
+#contact-form .form-button {
+   display: flex;
+    align-items: center;
+   justify-content: center;
 }
 /* Footer */ 
 
