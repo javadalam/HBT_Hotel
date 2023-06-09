@@ -1,4 +1,13 @@
 /* RESET CSS */ 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+    --dark : #333;
+    --white : #fff;
+    --lightdark : #444;
+    --bg-praimary : #f7c08a;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,12 +17,12 @@
 /* Main Styling */
 
 html , body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.7em; 
 }
 
 a {
-    color: #333;
+    color: var(--dark);
     text-decoration: none;
 }
 h1,h2,h3 {
@@ -38,8 +47,8 @@ p {
 .btn {
     display: inline-block;
     font-size: 18px;
-    color: white;
-    background: #333;
+    color: var(--white);
+    background: var(--dark);
     padding: 13px 20px;
     border: none;
     cursor: pointer;
@@ -47,29 +56,29 @@ p {
 }
 
 .btn:hover{
-    background: #f7c08a;
-    color: #333;
+    background: var(--bg-praimary);
+    color: var(--dark);
 }
 
 .btn-light {
     background: whitesmoke;
-    color: #333;
+    color: var(--dark);
 }
 
 .bg-dark {
-    background: #333;
-    color: #fff;
+    background: var(--dark);
+    color: var(--white);
 }
 .bg-light{
-    background: #f4f4f4;
-    color: #333;
+    background: var(--white);
+    color: var(--dark);
 }
 .bg-praimary {
-    color: #333;
-    background: #f7c08a;
+    color: var(--dark);
+    background: var(--bg-praimary);
 }
 .praimary-text {
-    color: #f7c08a;
+    color: var(--bg-praimary);
 }
 
 .clr {
@@ -99,13 +108,13 @@ p {
 /* Navbar Styling */ 
 
 #praimary-nav {
-    background: #333;
-    color: #fff;
+    background: var(--dark);
+    color: var(--white);
     overflow: auto;
 
 }
 #praimary-nav a {
-    color: white;
+    color: var(--white);
 }
 
 #praimary-nav h1 {
@@ -115,7 +124,7 @@ p {
 
 #praimary-nav h1 a:hover {
     color: orchid;
-    background: #444;
+    background: var(--lightdark);;
   }
 
 #praimary-nav ul {
@@ -136,7 +145,7 @@ p {
 }
 #praimary-nav ul li a:hover,
 #praimary-nav ul li a.current {
-    background: #444;
+    background: var(--lightdark);;
     color:coral;
 }
 
@@ -148,7 +157,7 @@ p {
 }
 
 #showcase .showcase-content {
-    color: #fff;
+    color: var(--white);
     text-align: center;
     padding-top: 170px;
 }
@@ -231,7 +240,7 @@ p {
 }
 
 #testimonials h2 {
-    color: #fff;
+    color: var(--white);
     text-align: center;
     padding-bottom: 40px;
 }
@@ -271,22 +280,18 @@ p {
 
 #contact-form input:focus , #contact-form textarea:focus {
     outline: none;
-    border-color: #f7c08a;
+    border-color: var(--bg-praimary);
 
 }
 
-#contact-form .form-button {
-   display: flex;
-    align-items: center;
-   justify-content: center;
-}
+
 /* Footer */ 
 
 #main-footer  {
-    background:#444;
+    background: var(--lightdark);
     padding: 10px;
     text-align: center;
-    color: #fff;
+    color: var(--white);
 
 }
 
